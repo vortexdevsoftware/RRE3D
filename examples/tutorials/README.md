@@ -6,6 +6,6 @@ for creating your application. <br>
 
 [00](00_CreateScene): Setting up a basic empty scene. <br>
 [01](01_LoadingMeshes): Load OBJ/FBX Meshes from file using the built-in loader and insert them into the Scene. <br>
-[02](02_Lightning): Set up a Skybox and Lights to properly illuminate the Scene. <br>
+[02](02_Lightning): Set up a Skybox and lights to properly illuminate the Scene. <br>
 [03](03_AnimateProperties): Interpolating/Animating entities's Properties. <br>
 [04](04_ViewportMovement): Move the viewport around like a 1st person perspective game. <br>
