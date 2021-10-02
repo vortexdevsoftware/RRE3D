@@ -1,5 +1,5 @@
 ```diff
-! This project is currently under initial development phase, as of yet, it's not recommended for actual use.
+!This project is currently under initial development phase, as of yet, it's not recommended for actual use.
 ```
 <h1 align="center"><strong>RRE3D</strong></h1>
 Rapid Raster Engine (RRE) is a lightweight Object-Oriented 3D rendering library for rapid software development and multiple graphics backends.
