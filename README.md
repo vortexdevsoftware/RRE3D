@@ -27,4 +27,4 @@ RRE3D was made possible with the following open source technologies:<br><br>
 <h2 align="center"><strong>Contributions</strong></h2>
 
 <p align="center"><strong>We welcome all contributions to the RRE3D repository!</strong><br>
-For contributing, you may fork the repo, make changes and then send a pull request.</p>
+For contributing, you may fork the repository, make changes and then send a pull request.</p>
