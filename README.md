@@ -23,3 +23,8 @@ The aim of the RRE3D graphics engine is to bring plain simplicity to 3D C++ appl
 RRE3D was made possible with the following open source technologies:<br><br>
 <a href="https://www.glfw.org/">GLFW</a><br>
 <a href="https://github.com/nothings/stb">stb_image.h</a><br>
+
+<h2 align="center"><strong>Contributions</strong></h2>
+
+<p align="center"><strong>We welcome all contributions to the RRE3D repository!</strong><br>
+For contributing, you may fork the repo, make changes and then send a pull request.</p>
