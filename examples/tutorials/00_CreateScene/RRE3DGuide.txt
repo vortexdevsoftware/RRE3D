@@ -1,0 +1,7 @@
+This is an intermediate guide on how to compile your first program using RRE3D.
+
+First make sure you have:
+
+* Windows 7 or higher
+* A compiler such as MinGW g++ or MSVC (which is used by default on Visual Studio)
+
