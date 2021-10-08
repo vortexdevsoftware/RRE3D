@@ -18,11 +18,11 @@ RRE3D Entities are loosely modeled as C++ classes that provide their own graphic
   <li>Compilable with MSVC or MinGW G++</li>
 </ul>
 
-<h3 align="center">Learning Resources</h3>
-The RRE3D repository provides several free examples and scenarios that can be easily extended into a game, see them <a href="https://github.com/vortexdevsoftware/RRE3D/tree/main/examples">here</a>.<br>
-
 <h2 align="center"><strong>Objective</strong></h2>
 The aim of the RRE3D graphics engine is to bring plain simplicity to 3D C++ application development and produce results quickly.<br>
+
+<h3 align="center">Learning Resources</h3>
+The RRE3D repository provides several free examples, scenarios and important tutorials that can be easily extended into a game, see them <a href="https://github.com/vortexdevsoftware/RRE3D/tree/main/examples">here</a>.<br>
 
 <h2 align="center"><strong>Open Source Technologies Used</strong></h2>
 RRE3D was made possible with the following open source technologies:<br><br>
