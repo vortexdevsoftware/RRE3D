@@ -2,10 +2,10 @@
 !This project is currently under initial development phase, as of yet, it's not recommended for actual use.
 ```
 <h1 align="center"><strong>RRE3D</strong></h1>
-Rapid Raster Engine (RRE) is a lightweight Object-Oriented 3D rendering library for rapid software development and multiple graphics backends.
+Rapid Raster Engine (RRE) is a lightweight Object-Oriented 3D rendering project for rapid software development and multiple graphics backends.
 
 <h2 align="center"><strong>Downloading & Implementing</strong></h2>
-It is recommended that you get the latest download from <a href="https://github.com/vortexdevsoftware/RRE3D/releases">Releases</a>, but you can also compile it yourself
+It is recommended that you get the latest download from <a href="https://github.com/vortexdevsoftware/RRE3D/releases">Releases</a>, you can also compile it yourself
 using the already provided build commands.
 
 <h2 align="center"><strong>Overview</strong></h2>
