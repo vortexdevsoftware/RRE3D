@@ -22,6 +22,9 @@
 *.a
 *.lib
 
+# Visual Code folder
+.vscode/*
+
 # Executables
 *.exe
 *.out
