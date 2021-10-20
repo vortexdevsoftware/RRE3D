@@ -1,3 +1,4 @@
+/* This is where you should write your application using RRE3D */
 
 #include "RRE3D/rre3d.h"
 
