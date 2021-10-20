@@ -3,10 +3,11 @@
 ```
 <h1 align="center"><strong>RRE3D</strong></h1>
 Rapid Raster Engine (RRE) is a lightweight Object-Oriented 3D rendering project for rapid software development and multiple graphics backends.
+It may also be considered a wrapper for GLFW.
 
 <h2 align="center"><strong>Downloading & Implementing</strong></h2>
 It is recommended that you get the latest download from <a href="https://github.com/vortexdevsoftware/RRE3D/releases">Releases</a>, you can also compile it yourself
-using the already provided build commands.
+using the already provided <a href="BUILD.md">build commands</a>.
 
 <h2 align="center"><strong>Overview</strong></h2>
 RRE3D Entities are loosely modeled as C++ classes that provide their own graphics routines and 3D game logic, this makes it a simple and easy-to-use interface designed to minimize the effort required to render 3D scenes, allowing developers to focus on content rather than 3D graphics and rendering of 3D objects.
