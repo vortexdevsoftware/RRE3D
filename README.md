@@ -15,7 +15,7 @@ RRE3D Entities are loosely modeled as C++ classes that provide their own graphic
 <ul>
   <li>OpenGL & Vulkan Support</li>
   <li>Windows (all major versions)</li>
-  <li>Compilable with MSVC or MinGW G++</li>
+  <li>Compilable with MSVC and MinGW g++</li>
 </ul>
 
 <h2 align="center"><strong>Objective</strong></h2>
