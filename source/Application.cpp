@@ -1,6 +1,5 @@
-//
-#include "RRE3D/rre3d.h"
 
+#include "RRE3D/rre3d.h"
 
 /* These initial functions are declared by RRE3D */
 
@@ -8,12 +7,14 @@
 
 void Start()
 {
-
+    // create objects here
+    return;
 }
 
-/* Update every frame */
+/* Update is called every frame */
 
 void Update()
 {
 
+    return;
 }
