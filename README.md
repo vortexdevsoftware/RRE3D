@@ -24,7 +24,7 @@ Due to driver support discrepancies between hardware manufacturers, Windows 7, 8
 The aim of the RRE3D graphics engine is to bring unification and simplicity to 3D C++ application development, minimizing the amount of steps and time used into the creation of 3D environments. Produce phenomenal yet stunning results that are on par with the competition. <br>
 
 <h3 align="center">Learning Resources</h3>
-The RRE3D repository provides several free open source examples, scenarios and important tutorials that can be easily applied into a game, see them <a href="https://github.com/vortexdevsoftware/RRE3D/tree/main/examples">here</a>.<br>
+The RRE3D repository provides several free open source examples, scenarios and important tutorials that can be easily applied into any game, see them <a href="https://github.com/vortexdevsoftware/RRE3D/tree/main/examples">here</a>.<br>
 
 <h2 align="center"><strong>Open Source Technologies Used</strong></h2>
 RRE3D was made possible with the following open source technologies:<br><br>
