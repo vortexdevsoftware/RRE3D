@@ -1,4 +1,3 @@
-#include <vector>
 #include "RRE3D/rre3d.h"
 #include "GLFW/glfw3.h"
 
@@ -21,7 +20,7 @@ int main()
 		   glfwTerminate();
   		 return 1;
 	  }
-
+    
     glfwMakeContextCurrent(window);
 
     /* Once everything is ready, call the first function just before the main loop */

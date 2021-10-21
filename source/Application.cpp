@@ -6,7 +6,7 @@
 
 /* Called upon initialization */
 
-void Start()
+void RRE3D::Start()
 {
     // create objects here
     return;
@@ -14,7 +14,7 @@ void Start()
 
 /* Update is called every frame */
 
-void Update()
+void RRE3D::Update()
 {
 
     return;
