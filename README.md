@@ -17,8 +17,8 @@ RRE3D Entities are loosely modelled as C++ classes that provide their own graphi
   <li>OpenGL & Vulkan API support</li>
   <li>Windows 10 and 11</li>
   <li>Compilable with MSVC and MinGW g++</li>
-Due to driver support discrepancies between hardware manufacturers, Windows 7, 8 and 8.1 may experience issues depending on the brand of video adapter.
 </ul>
+Due to driver support discrepancies between hardware manufacturers, Windows 7, 8 and 8.1 may experience issues depending on the brand of video adapter.
 
 <h2 align="center"><strong>Objective</strong></h2>
 The aim of the RRE3D graphics engine is to bring unification and simplicity to 3D C++ application development, minimizing the amount of steps and time used into the creation of 3D environments. Produce phenomenal yet stunning results that are on par with the competition. <br>
