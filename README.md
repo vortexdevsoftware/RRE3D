@@ -28,8 +28,9 @@ The RRE3D repository provides several free open source examples, scenarios and i
 
 <h2 align="center"><strong>Open Source Technologies Used</strong></h2>
 RRE3D was made possible with the following open source technologies:<br><br>
-<a href="https://www.glfw.org/">GLFW</a><br>
-<a href="https://github.com/nothings/stb">stb_image.h</a><br>
+<a href="https://www.glfw.org/">GLFW</a> - Window<br>
+<a href="https://github.com/nothings/stb">stb_image.h</a> - Texture Loading<br>
+<a href="http://assimp.org/">Assimp</a> - Model Loading<br>
 
 <h2 align="center"><strong>Contributions</strong></h2>
 
