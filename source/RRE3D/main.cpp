@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
 #include "GLFW/glfw3.h"
 #include "RRE3D/rre3d.h"
 #include "stb/stb_image.h"
@@ -44,8 +45,11 @@ int main(void)
 
         double nowTime = glfwGetTime();
         Time = nowTime;
-        deltaTime += (nowTime - lastTime);
+        deltaTime = (nowTime - lastTime);
         lastTime = nowTime;
+
+        /* Debugging delta time */
+        glfwSetWindowTitle(window, ("Delta Time: " + std::to_string(deltaTime)).c_str());
 
         /* Time */
 
