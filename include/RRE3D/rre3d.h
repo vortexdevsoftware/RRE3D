@@ -1,28 +1,10 @@
+#include <math.h>
+
 namespace RRE3D {
 
     /* Classes */
 
-    // The scene is the class for all entities in the application.
-    class Scene
-    {
-
-    };
-
-    class Object
-    {
-        Vector3 position;
-        Mesh mesh;
-        Vector3 scale;
-    };
-
-    class Mesh
-    {
-        Vector3* vertices;
-
-        /* Create constructor that receives array of v3's */
-    };
-
-    class Vector3
+    struct Vector3
     {
         float x, y, z;
         Vector3(float xx, float yy, float zz){
@@ -55,6 +37,36 @@ namespace RRE3D {
             y += vector.y;
             z += vector.z;
         }
+        float operator-(float scalar){
+            x -= scalar;
+            y -= scalar;
+            z -= scalar;
+        }
+        float operator-(Vector3 vector){
+            x -= vector.x;
+            y -= vector.y;
+            z -= vector.z;
+        }
+    };
+
+    class Mesh
+    {
+        Vector3* vertices;
+
+        /* Create constructor that receives array of v3's */
+    };
+
+    class Object
+    {
+        Vector3 position;
+        Mesh mesh;
+        Vector3 scale;
+    };
+
+    // The scene is the class for all entities in the application.
+    class Scene
+    {
+
     };
     
     /* Functions */
