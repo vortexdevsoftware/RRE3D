@@ -16,7 +16,7 @@ int main()
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     window = glfwCreateWindow(800, 800, "RRE3D", NULL, NULL);
-    if (window == nullptr){
+    if (!window){
 		   glfwTerminate();
   		 return 1;
 	  }
@@ -24,13 +24,18 @@ int main()
     glfwMakeContextCurrent(window);
 
     /* Once everything is ready, call the first function just before the main loop */
-    RRE3D::Start();
+    //RRE3D::Start();
 
     /* The main loop, which keeps the application open */
     while(!glfwWindowShouldClose(window))
     {
+        //RRE3D::Update();
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        glfwSwapBuffers(window);
+
         glfwPollEvents();
-        RRE3D::Update();
+
     }
 
     glfwDestroyWindow(window);
