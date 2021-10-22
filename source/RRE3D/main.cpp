@@ -2,7 +2,6 @@
 #include "GLFW/glfw3.h"
 
 /* Time */
-float timestep = 1.0 / 60.0;
 float deltaTime;
 float Time;
 /* Time */
@@ -40,13 +39,8 @@ int main(void)
 
         double nowTime = glfwGetTime();
         Time = nowTime;
-        deltaTime += (nowTime - lastTime) / timestep;
+        deltaTime += (nowTime - lastTime);
         lastTime = nowTime;
-
-        while (deltaTime >= 1.0){
-            RRE3D::FixedUpdate();   // - FixedUpdate function
-            deltaTime--;
-        }
 
         /* Time */
 
@@ -62,16 +56,4 @@ int main(void)
     glfwDestroyWindow(window);
     glfwTerminate();
     return 0;
-}
-
-/* Changes the timestep Ex: 0.0166*/
-void RRE3D::ChangeTimestep(float tstep)
-{ 
-    timestep = tstep;
-}
-
-/* Changes the timestep Ex: 60 (Called 60 times per frame) */
-void RRE3D::ChangeTimestep(float frames)
-{
-    timestep = 1.0 / frames;
 }

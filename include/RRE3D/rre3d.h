@@ -9,10 +9,4 @@ namespace RRE3D {
     // Called every frame
     void Update(void);
 
-    // Called every timestep
-    void FixedUpdate(void);
-
-    // Change the timestep
-    void ChangeTimestep(double);
-
 }
