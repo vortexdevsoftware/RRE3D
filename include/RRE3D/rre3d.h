@@ -1,4 +1,5 @@
 #include <math.h>
+#include "glm/glm.hpp"
 
 namespace RRE3D {
 

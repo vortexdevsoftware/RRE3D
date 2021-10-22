@@ -31,6 +31,7 @@ RRE3D was made possible with the following open source technologies:<br><br>
 <a href="https://www.glfw.org/">GLFW</a> - Window<br>
 <a href="https://github.com/nothings/stb">stb_image.h</a> - Texture Loading<br>
 <a href="http://assimp.org/">Assimp</a> - Model Loading<br>
+<a href="https://github.com/g-truc/glm">GLM</a> - Math Library<br>
 
 <h2 align="center"><strong>Contributions</strong></h2>
 
