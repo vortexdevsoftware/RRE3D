@@ -1,4 +1,3 @@
-#include <math.h>
 #include "glm/glm.hpp"
 
 namespace RRE3D {
@@ -14,9 +13,9 @@ namespace RRE3D {
 
     class Object
     {
-        //Vector3 position;
+        glm::vec3 position;
         Mesh mesh;
-        //Vector3 scale;
+        glm::vec3 scale;
     };
 
     // The scene is the class for all entities in the application.
