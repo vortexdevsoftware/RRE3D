@@ -8,7 +8,7 @@
 
 void RRE3D::Start()
 {
-    // create objects here
+    // TODO: create some object here
     return;
 }
 
@@ -16,6 +16,6 @@ void RRE3D::Start()
 
 void RRE3D::Update()
 {
-
+    // TODO: probably animate the object
     return;
 }

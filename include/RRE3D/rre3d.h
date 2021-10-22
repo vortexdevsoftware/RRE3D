@@ -1,19 +1,11 @@
 #include <iostream>
 #include <vector>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 namespace RRE3D {
 
-    void Start();
+    void Start(void);
 
-    void Update();
+    void Update(void);
 
 
 }
-
-#ifdef __cplusplus
-}
-#endif
