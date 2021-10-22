@@ -1,11 +1,14 @@
+#include <vector>
+
 namespace RRE3D {
 
     /* Classes */
 
-    // The scene is the class for all entities in the application.
-    class Scene
+    class Mesh
     {
+        Vector3* vertices;
 
+        /* Create constructor that receives array of v3's */
     };
 
     class Object
@@ -15,11 +18,11 @@ namespace RRE3D {
         Vector3 scale;
     };
 
-    class Mesh
+    
+    // The scene is the class for all entities in the application.
+    class Scene
     {
-        Vector3* vertices;
-
-        /* Create constructor that receives array of v3's */
+        std::vector<Object> objects;
     };
 
     struct Vector3
