@@ -1,12 +1,13 @@
 /* This is where you should write your application using RRE3D */
 
 #include "RRE3D/rre3d.h"
+using namespace RRE3D;
 
 /* These initial functions are declared by RRE3D */
 
 /* Called upon initialization */
 
-void RRE3D::Start()
+void Start()
 {
     // TODO: create some object here
     return;
@@ -14,7 +15,7 @@ void RRE3D::Start()
 
 /* Update is called every frame */
 
-void RRE3D::Update()
+void Update()
 {
     // TODO: probably animate the object
     return;
