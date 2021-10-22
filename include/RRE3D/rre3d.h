@@ -25,7 +25,7 @@ namespace RRE3D {
         std::vector<Object> objects;
     };
 
-    struct Vector3
+    class Vector3
     {
         float x, y, z;
         Vector3(float xx, float yy, float zz){
