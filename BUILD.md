@@ -1,7 +1,16 @@
 # Compile Instructions
 ### Currently you may use MinGW or Visual Studio to compile this application.
 
-## Mingw-w64 args for VSCode tasks.json
+## MinGW-w64 on Command Line / .bat
+
+Assuming you have MinGW's bin folder defined on PATH.
+Do not forget that RRE3D's main cannot be ommited.
+
+```cmd
+g++ -std=c++17 source/RRE3D/*.cpp source/*.cpp -I include -L lib -l glfw3 -l gdi32 -l opengl32 -o bin/Application.exe
+```
+
+## MinGW-w64 args for VSCode tasks.json
 
 ```json
 "args": [
@@ -17,3 +26,7 @@
     "${workspaceFolder}\\bin\\Application.exe"
 ]
 ```
+
+## Visual Studio
+
+Coming Soon

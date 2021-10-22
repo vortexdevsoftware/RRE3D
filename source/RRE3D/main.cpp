@@ -1,5 +1,10 @@
-#include "RRE3D/rre3d.h"
+#define STB_IMAGE_IMPLEMENTATION
+
+#include <iostream>
+#include <vector>
 #include "GLFW/glfw3.h"
+#include "RRE3D/rre3d.h"
+#include "stb/stb_image.h"
 
 /* Time */
 float deltaTime;
@@ -28,7 +33,7 @@ int main(void)
     
     glfwMakeContextCurrent(window);
 
-    /* Once everything is ready, call the first function just before the main loop */
+    /* Once everything is ready, call the Start function just before the main loop */
     RRE3D::Start();
 
     double lastTime = glfwGetTime();
@@ -44,7 +49,9 @@ int main(void)
 
         /* Time */
 
+        /* Call the Update function that is defined by the user in their application environment */
         RRE3D::Update();
+
         glClear(GL_COLOR_BUFFER_BIT);
 
         glfwSwapBuffers(window);
