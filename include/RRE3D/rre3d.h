@@ -22,6 +22,37 @@ namespace RRE3D {
         /* Create constructor that receives array of v3's */
     };
 
+    struct Vector2
+    {
+        float x, y;
+        Vector2(float xx, float yy){
+            x = xx;
+            y = yy;
+        }
+
+        float distance(Vector2 vector){
+            return sqrt(dot(vector));
+        }
+        float dot(Vector2 vector){
+            return x * vector.x + y * vector.y;
+        }
+        float dot(Vector2 v1, Vector2 v2){
+            return v1.x * v2.x + v1.y * v2.y;
+        }
+        float operator*(float scalar){
+            x *= scalar;
+            y *= scalar;
+        }
+        float operator+(float scalar){
+            x += scalar;
+            y += scalar;
+        }
+        float operator+(Vector2 vector){
+            x += vector.x;
+            y += vector.y;
+        }
+    };
+
     struct Vector3
     {
         float x, y, z;
