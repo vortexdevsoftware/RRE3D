@@ -69,3 +69,6 @@ int main(void)
     glfwTerminate();
     return 0;
 }
+
+/* Object Creation */
+

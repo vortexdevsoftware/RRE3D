@@ -1,3 +1,4 @@
+#include <vector>
 #include "glm/glm.hpp"
 
 namespace RRE3D {
@@ -19,6 +20,9 @@ namespace RRE3D {
         glm::vec3 position;
         Mesh mesh;
         glm::vec3 scale;
+        public:
+        // Completely delete the object.
+        void Destroy();
     };
 
     // The scene is the class for all entities in the application.
@@ -35,5 +39,10 @@ namespace RRE3D {
 
     // Called every frame
     void Update(void);
+
+    // We need a function that creates a object within the Objects vector array in the scene,
+    // and returns a pointer to the Object inside the array after its creation
+    // so users can simply make a variable that calls the function and points to the object already.
+    Object* CreateObject();
 
 }
