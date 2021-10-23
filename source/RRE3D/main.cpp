@@ -7,12 +7,17 @@
 #include "RRE3D/rre3d.h"
 #include "stb/stb_image.h"
 
-/* Time */
+///// PRE DEFINED VARIABLES ////
+
+RRE3D::Scene mainScene;
+// Time
 float deltaTime;
 float Time;
-/* Time */
+//
 
-/* This is the true entry point of the application */
+///// ENTRY POINT /////
+
+/* This is the true starting point of the application */
 int main(void)
 {
     /* The 3D renderer window of the application */
@@ -70,5 +75,5 @@ int main(void)
     return 0;
 }
 
-/* Object Creation */
+///// Object Creation /////
 

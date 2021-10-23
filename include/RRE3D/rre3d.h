@@ -25,10 +25,16 @@ namespace RRE3D {
         void Destroy();
     };
 
+    class Light
+    {
+        // We need a variable to specify the type of the light, e.g: PointLight, SpotLight.
+    };
+
     // The scene is the class for all entities in the application.
     class Scene
     {
         
+        std::vector<Object> objects;
     };
     
     /* Functions */
