@@ -77,3 +77,8 @@ int main(void)
 
 ///// Object Creation /////
 
+/* Create an object */
+RRE3D::Object* RRE3D::CreateObject()
+{
+
+}

@@ -20,14 +20,23 @@ namespace RRE3D {
         glm::vec3 position;
         Mesh mesh;
         glm::vec3 scale;
+
         public:
         // Completely delete the object.
         void Destroy();
     };
 
+    enum LIGHT_TYPE
+    {
+        Point, Spot, Area, Global
+    };
+
     class Light
     {
-        // We need a variable to specify the type of the light, e.g: PointLight, SpotLight.
+        glm::vec3 position;
+
+        LIGHT_TYPE lightType;
+        glm::vec4 color;
     };
 
     // The scene is the class for all entities in the application.
