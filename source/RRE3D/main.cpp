@@ -77,8 +77,10 @@ int main(void)
 
 ///// Object Creation /////
 
-/* Create an object */
+/* Create an object and put it on the scene*/
 RRE3D::Object* RRE3D::CreateObject()
 {
-
+    Object obj;
+    mainScene.AddToScene(obj);
+    return &obj;
 }
