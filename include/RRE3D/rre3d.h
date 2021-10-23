@@ -6,9 +6,12 @@ namespace RRE3D {
 
     class Mesh
     {
-        //Vector3* vertices;
+        glm::vec3 *vertices;
 
-        /* Create constructor that receives array of v3's */
+        /* Create constructor that receives array of vec3's */
+        Mesh(glm::vec3* verts){
+            vertices = verts;
+        }
     };
 
     class Object
@@ -21,7 +24,7 @@ namespace RRE3D {
     // The scene is the class for all entities in the application.
     class Scene
     {
-
+        
     };
     
     /* Functions */

@@ -56,6 +56,7 @@ int main(void)
         /* Call the Update function that is defined by the user in their application environment */
         RRE3D::Update();
 
+        
         glClear(GL_COLOR_BUFFER_BIT);
 
         glfwSwapBuffers(window);
