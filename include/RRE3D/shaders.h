@@ -10,13 +10,11 @@ class Shader
 
     Shader(const char *vShader, const char *fShader)
     {
-        GLuint vertex;
-        vertex = glCreateShader(GL_VERTEX_SHADER);
+        GLuint vertex = glCreateShader(GL_VERTEX_SHADER);
         glShaderSource(vertex, 1, &vShader, NULL);
         glCompileShader(vertex);
 
-        GLuint frag;
-        frag = glCreateShader(GL_FRAGMENT_SHADER);
+        GLuint frag = glCreateShader(GL_FRAGMENT_SHADER);
         glShaderSource(frag, 1, &fShader, NULL);
         glCompileShader(frag);
 

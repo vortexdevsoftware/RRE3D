@@ -48,27 +48,23 @@ namespace RRE3D {
 
     class Mesh
     {
+        public:
+
         glm::vec3 *vertices;
 
         /* Create constructor that receives array of vec3's */
         Mesh(glm::vec3* verts){
             vertices = verts;
         }
-
-        public:
-        Mesh()
-        {
-
-        }
     };
 
     class Object
     {
+        public:
+        
         glm::vec3 position;
         Mesh mesh;
         glm::vec3 scale;
-
-        public:
 
         // Completely delete the object.
         void Destroy();
@@ -78,16 +74,12 @@ namespace RRE3D {
 
     class Light
     {
-        glm::vec3 position;
+        public:
 
+        glm::vec3 position;
         LIGHT_TYPE lightType;
         glm::vec4 color;
 
-        public:
-        Light()
-        {
-            
-        }
     };
 
     // The scene is the class for all entities in the application.
@@ -96,10 +88,6 @@ namespace RRE3D {
         std::vector<Object> objects;
 
         public:
-        Scene()
-        {
-
-        }
 
         /* To be properly implemented */
         void AddToScene(Object obj)
