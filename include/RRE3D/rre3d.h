@@ -3,6 +3,13 @@
 
 namespace RRE3D {
 
+    /* Enumerators */
+
+    enum LIGHT_TYPE
+    {
+        Point, Spot, Area, Global
+    };
+
     /* Classes */
 
     class Mesh
@@ -35,11 +42,6 @@ namespace RRE3D {
 
         // Completely delete the object.
         void Destroy();
-    };
-
-    enum LIGHT_TYPE
-    {
-        Point, Spot, Area, Global
     };
 
     class Light
