@@ -10,13 +10,21 @@ namespace RRE3D {
         Point, Spot, Area, Global
     };
 
-    // The easing functions specify the rate of change of a parameter over time.
+    // The easing style specifies the rate of change of a parameter over time.
     enum Easing_Style
     {
         Linear,
         Sine,
         Cubic,
         Quint,
+    };
+
+    // The easing direction controls where the easing style is applied.
+    enum Easing_Direction
+    {
+        In,
+        Out,
+        InOut
     };
 
     /* Classes */
