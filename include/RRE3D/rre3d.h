@@ -1,6 +1,13 @@
 #include <vector>
 #include "glm/glm.hpp"
 
+/* Namespace Declaration Order:
+    1. Enums
+    2. Structs
+    3. Classes
+    4. Functions
+*/
+
 namespace RRE3D {
 
     /* Enumerators */
@@ -25,6 +32,16 @@ namespace RRE3D {
         In,
         Out,
         InOut
+    };
+
+    /* Structs */
+
+    struct TweenInfo
+    {
+        Easing_Style easingStyle;
+        Easing_Direction easingDirection;
+        // The amount of time the tween takes in seconds.
+        double time;
     };
 
     /* Classes */
@@ -91,13 +108,6 @@ namespace RRE3D {
         {
             objects.push_back(obj);
         }
-    };
-    
-    /* Structs */
-
-    struct TweenInfo
-    {
-
     };
 
     /* Functions */
