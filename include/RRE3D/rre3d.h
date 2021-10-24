@@ -69,10 +69,6 @@ namespace RRE3D {
         glm::vec3 scale;
 
         public:
-        Object()
-        {
-            
-        }
 
         // Completely delete the object.
         void Destroy();
