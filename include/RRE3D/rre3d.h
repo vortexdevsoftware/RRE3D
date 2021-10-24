@@ -10,6 +10,15 @@ namespace RRE3D {
         Point, Spot, Area, Global
     };
 
+    // The easing functions specify the rate of change of a parameter over time.
+    enum Easing_Style
+    {
+        Linear,
+        Sine,
+        Cubic,
+        Quint,
+    };
+
     /* Classes */
 
     class Mesh
@@ -76,6 +85,13 @@ namespace RRE3D {
         }
     };
     
+    /* Structs */
+
+    struct TweenInfo
+    {
+
+    };
+
     /* Functions */
 
     // Called upon RRE3D initialization is complete and ready to use.
