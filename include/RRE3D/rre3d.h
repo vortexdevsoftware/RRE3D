@@ -76,6 +76,8 @@ namespace RRE3D {
 
         // Completely delete the object.
         void Destroy();
+        // interpolate the properties of and object
+        void Tween();
     };
 
     class Light
