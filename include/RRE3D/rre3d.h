@@ -1,5 +1,6 @@
 #include <vector>
 #include "glm/glm.hpp"
+#include "shaders.h"
 
 /* Namespace Declaration Order:
     1. Enums
@@ -46,10 +47,8 @@ namespace RRE3D {
 
     /* Classes */
 
-    class Mesh
+    struct Mesh
     {
-        public:
-
         glm::vec3 *vertices;
 
         /* Create constructor that receives array of vec3's */
@@ -61,10 +60,11 @@ namespace RRE3D {
     class Object
     {
         public:
-        
+
         glm::vec3 position;
-        Mesh mesh;
         glm::vec3 scale;
+        Mesh mesh;
+        Shader shader;
 
         // Completely delete the object.
         void Destroy();
@@ -77,23 +77,16 @@ namespace RRE3D {
         public:
 
         glm::vec3 position;
-        LIGHT_TYPE lightType;
         glm::vec4 color;
+        LIGHT_TYPE lightType;
 
     };
 
     // The scene is the class for all entities in the application.
-    class Scene
+    struct Scene
     {
         std::vector<Object> objects;
 
-        public:
-
-        /* To be properly implemented */
-        void AddToScene(Object obj)
-        {
-            objects.push_back(obj);
-        }
     };
 
     /* Functions */
@@ -109,5 +102,4 @@ namespace RRE3D {
     // and returns a pointer to the Object inside the array after its creation
     // so users can simply make a variable that calls the function and points to the object already.
     Object* CreateObject();
-
 }
