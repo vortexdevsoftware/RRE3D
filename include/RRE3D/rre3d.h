@@ -1,6 +1,5 @@
 #include <vector>
 #include "glm/glm.hpp"
-#include "shaders.h"
 
 /* Namespace Declaration Order:
     1. Enums
@@ -13,81 +12,9 @@ namespace RRE3D {
 
     /* Enumerators */
 
-    enum LIGHT_TYPE
-    {
-        Point, Spot, Area, Global
-    };
-
-    // The easing style specifies the rate of change of a parameter over time.
-    enum Easing_Style
-    {
-        Linear,
-        Sine,
-        Cubic,
-        Quint,
-    };
-
-    // The easing direction controls where the easing style is applied.
-    enum Easing_Direction
-    {
-        In,
-        Out,
-        InOut
-    };
-
     /* Structs */
 
-    struct TweenInfo
-    {
-        Easing_Style easingStyle;
-        Easing_Direction easingDirection;
-        // The amount of time the tween takes in seconds.
-        double time;
-    };
-
     /* Classes */
-
-    struct Mesh
-    {
-        glm::vec3 *vertices;
-
-        /* Create constructor that receives array of vec3's */
-        Mesh(glm::vec3* verts){
-            vertices = verts;
-        }
-    };
-
-    class Object
-    {
-        public:
-
-        glm::vec3 position;
-        glm::vec3 scale;
-        Mesh mesh;
-        Shader shader;
-
-        // Completely delete the object.
-        void Destroy();
-        // interpolate the properties of and object
-        void Tween();
-    };
-
-    class Light
-    {
-        public:
-
-        glm::vec3 position;
-        glm::vec4 color;
-        LIGHT_TYPE lightType;
-
-    };
-
-    // The scene is the class for all entities in the application.
-    struct Scene
-    {
-        std::vector<Object> objects;
-
-    };
 
     /* Functions */
 
@@ -97,9 +24,4 @@ namespace RRE3D {
 
     // Called every frame
     void Update(void);
-
-    // We need a function that creates a object within the Objects vector array in the scene,
-    // and returns a pointer to the Object inside the array after its creation
-    // so users can simply make a variable that calls the function and points to the object already.
-    Object* CreateObject();
 }

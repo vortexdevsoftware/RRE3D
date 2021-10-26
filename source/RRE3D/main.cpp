@@ -9,7 +9,6 @@
 
 ///// PRE DEFINED VARIABLES ////
 
-RRE3D::Scene mainScene;
 // Time
 float deltaTime;
 float Time;
@@ -73,12 +72,4 @@ int main(void)
     glfwDestroyWindow(window);
     glfwTerminate();
     return 0;
-}
-
-///// Object Creation /////
-
-/* Create an object and put it on the scene*/
-RRE3D::Object* RRE3D::CreateObject()
-{
-    
 }
