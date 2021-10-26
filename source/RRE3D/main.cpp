@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include "glad/glad.h"
 #include "GLFW/glfw3.h"
 #include "RRE3D/rre3d.h"
 #include "stb/stb_image.h"
@@ -37,6 +38,8 @@ int main(void)
 	  }
     
     glfwMakeContextCurrent(window);
+    gladLoadGL();
+  	glViewport(0, 0, 800, 800);
 
     /* Once everything is ready, call the Start function just before the main loop */
     RRE3D::Start();
@@ -60,7 +63,7 @@ int main(void)
         /* Call the Update function that is defined by the user in their application environment */
         RRE3D::Update();
 
-        
+        glClearColor(0.2, 0.4, 0.243, 1.0);
         glClear(GL_COLOR_BUFFER_BIT);
 
         glfwSwapBuffers(window);
