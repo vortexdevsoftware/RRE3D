@@ -5,7 +5,7 @@
 #include <string>
 #include "glad/glad.h"
 #include "GLFW/glfw3.h"
-#include "RRE3D/rre3d.h"
+#include "rre3d.h"
 #include "stb/stb_image.h"
 
 ///// PRE DEFINED VARIABLES ////
