@@ -1,12 +1,6 @@
 #define STB_IMAGE_IMPLEMENTATION
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include "glad/glad.h"
-#include "GLFW/glfw3.h"
 #include "rre3d.h"
-#include "stb/stb_image.h"
 
 ///// PRE DEFINED VARIABLES ////
 
