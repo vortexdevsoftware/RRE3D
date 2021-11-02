@@ -35,10 +35,10 @@ namespace RRE3D {
 
     // RRE3D's fundamental 3D object struct.
     struct Object {
-        bool Static; // Defines wether the object should be static or moving.
-        bool CanCollide; // Defines if the object should collide with other objects.
-        float Transparency; // Defines the object's transparency from 0.0f to 1.0f.
-        float Mass; // Mass is both a property of a physical body and a measure of its resistance to acceleration when a net force is applied.
+        bool Static = false; // Defines wether the object should be static or moving.
+        bool CanCollide = true; // Defines if the object should collide with other objects.
+        float Alpha = 0.0f; // Defines the object's transparency from 0.0f to 1.0f.
+        float Mass = 1.0f; // Mass is both a property of a physical body and a measure of its resistance to acceleration when a net force is applied.
         glm::vec3 Position; // The object's Location in 3D Space.
         glm::vec3 Velocity; // The object's Velocity in 3D Space.
         // The force is an influence that can change the motion of an object, it will be immediatelly converted into velocity after a time step
@@ -71,12 +71,16 @@ namespace RRE3D {
             void PhysicsStep(float deltaTime)
             {
                 for (Object* object : scene_objects)
-                {
+                {   
+                    if (!object->Static)
+                    {
                     object->Force += object->Mass * gravity; // Apply force and gravity
+
                     object->Velocity += object->Force / object->Mass * deltaTime; // Update velocity
                     object->Position += object->Velocity * deltaTime; // Update position
 
                     object->Force = glm::vec3(0.0f); // Reset force.
+                    }
                 }
             }
     };
