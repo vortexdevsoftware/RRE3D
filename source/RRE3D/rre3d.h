@@ -2,14 +2,7 @@
 
 // Includes
 
-#include <iostream>
-#include <filesystem>
-#include <vector>
-#include <algorithm>
-#include "glm/glm.hpp"
-#include "glad/glad.h"
-#include "GLFW/glfw3.h"
-#include "stb/stb_image.h"
+#include "includes.h"
 
 // This header file is for declaration of general RRE3D classes and functions
 
@@ -39,11 +32,14 @@ namespace RRE3D {
         bool CanCollide = true; // Defines if the object should collide with other objects.
         float Alpha = 0.0f; // Defines the object's transparency from 0.0f to 1.0f.
         float Mass = 1.0f; // Mass is both a property of a physical body and a measure of its resistance to acceleration when a net force is applied.
-        glm::vec3 Position; // The object's Location in 3D Space.
+        Transform Transform; // The object's Transform in 3D Space.
         glm::vec3 Velocity; // The object's Velocity in 3D Space.
         // The force is an influence that can change the motion of an object, it will be immediatelly converted into velocity after a time step
         // if possible.
         glm::vec3 Force;
+        
+        // Change shader to material.
+        //Shader Shader = DEFAULT_SHADER; // Object current shader
     };
 
     /* Classes */
@@ -74,12 +70,12 @@ namespace RRE3D {
                 {   
                     if (!object->Static)
                     {
-                    object->Force += object->Mass * gravity; // Apply force and gravity
+                        object->Force += object->Mass * gravity; // Apply force and gravity
 
-                    object->Velocity += object->Force / object->Mass * deltaTime; // Update velocity
-                    object->Position += object->Velocity * deltaTime; // Update position
+                        object->Velocity += object->Force / object->Mass * deltaTime; // Update velocity
+                        object->Transform.Position += object->Velocity * deltaTime; // Update position
 
-                    object->Force = glm::vec3(0.0f); // Reset force.
+                        object->Force = glm::vec3(0.0f); // Reset force.
                     }
                 }
             }

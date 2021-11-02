@@ -15,7 +15,7 @@ float Time;
 int main(void)
 {
     /* The 3D renderer window of the application */
-    GLFWwindow* window;
+    GLFWwindow* window; 
 
     if(!glfwInit())
       return 1;
@@ -30,6 +30,8 @@ int main(void)
 		   glfwTerminate();
   		 return 1;
 	  }
+
+    GLuint arroz;
     
     glfwMakeContextCurrent(window);
     gladLoadGL();
