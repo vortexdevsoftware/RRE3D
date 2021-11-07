@@ -4,7 +4,7 @@
 
 #include "includes.h"
 
-// This header file is for declaration of general RRE3D classes and functions
+// This header file is for declaration of general RRE3D classes and functions, for RRE3D Applications.
 
 /* Namespace Declaration Order:
     1. Enums
@@ -18,6 +18,12 @@ namespace RRE3D {
     /* Enumerators */
 
     /* Structs */
+
+    // Simple struct for saving shader vertex and fragment data.
+    struct Shader {
+        
+
+    };
 
     // Describes an object's position, rotation and scale.
     struct Transform {

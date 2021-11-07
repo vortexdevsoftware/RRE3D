@@ -5,5 +5,5 @@
 #include "glm/glm.hpp"
 #include "glad/glad.h"
 #include "GLFW/glfw3.h"
-#include "shader.h"
+#include "shaders.h"
 #include "stb/stb_image.h"
